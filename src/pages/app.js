@@ -9,7 +9,7 @@ import Dashboard from './app/dashboard';
 const App = () => (
   <Wrapper>
     <Router>
-      <Redirect noThrow from="/app" to="/app/dashboard" exact />
+      <Redirect noThrow path="/app" to="/app/dashboard" exact />
       <PrivateRoute path="/app/dashboard" component={Dashboard} />
       <PrivateRoute path="/app/builder/:id" component={Builder} />
       <NotFound default />

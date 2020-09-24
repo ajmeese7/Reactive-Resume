@@ -7,7 +7,7 @@ import NotFound from './404';
 const ResumeRouter = () => (
   <Wrapper>
     <Router>
-      <Redirect noThrow from="/r" to="/" exact />
+      <Redirect noThrow path="/r" to="/" exact />
       <ResumeViewer path="r/:id" />
       <NotFound default />
     </Router>
